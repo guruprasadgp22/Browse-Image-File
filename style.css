@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 700px;
+    height: 500px;
+    width: 100%;
+    border: 2px dashed whitesmoke;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    margin-bottom: 25px;
+    color: aliceblue;
+}
+
+input {
+    display: none;
+}
+
+.upload {
+    background: aliceblue;
+    padding: 8px 20px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.upload:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.img img {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: none;
+}
+
+.icon p.close {
+    font-size: 20px;
+    color: aliceblue;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+
+.wrapper .icon p.close {
+    color: crimson;
+}
+
+.img img.active {
+    display: block;
+}
+
+.wrapper .icon p .close.exit {
+    display: block;
+}
